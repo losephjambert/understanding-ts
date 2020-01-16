@@ -10,7 +10,19 @@ const names: string[] = ['Kate', 'Susan', 'Christine', 'Ron']
 
 // Tuples
 // a tuple is a fixed length, fixed type data type
-const roleTuple: (string | number)[] = [2, 'Engineer']
+// by typing the roleTuple this way, we ensure the 
+// tuple can only ever have n elements
+// and those elements must always be of number and string type
+// additionally, the types are positioned explicitly
+// so the 0th element must always be a number
+// and the 1st element must always be a string
+const roleTuple: [number, string] = [2, 'Engineer']
+
+// by assigning the inferredRoleTuple this way without explicitly
+// typing it, we lose the guarantee that the 0th element 
+// will always be a number and the 1st element will always be a string.
+// we also lose the guarantee that the tuple will only ever have a length
+// of 2.
 const inferredRoleTuple = [2, 'Engineer']
 
 const person: {
