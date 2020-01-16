@@ -8,6 +8,11 @@
 // an a array of strings, for example, would look like this:
 const names: string[] = ['Kate', 'Susan', 'Christine', 'Ron']
 
+// Tuples
+// a tuple is a fixed length, fixed type data type
+const roleTuple: (string | number)[] = [2, 'Engineer']
+const inferredRoleTuple = [2, 'Engineer']
+
 const person: {
   name: string
   age: number
