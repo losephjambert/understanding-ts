@@ -8,9 +8,9 @@
 // 12 console.log(add(number1, number2))
 // Found 1 error.
 
-function add(num1: number, num2: number, showResult: boolean) {
+function add(num1: number, num2: number, showResult: boolean, phrase: string) {
   if (showResult) {
-    console.log(num1 + num2)
+    console.log(`${phrase} ${num1 + num2}`)
   } else {
     return num1 + num2
   }
@@ -19,7 +19,8 @@ function add(num1: number, num2: number, showResult: boolean) {
 const number1 = `5`
 const number2 = 3.5
 const printResult = true
+const resultPhrase = "Result is"
 
-add(Number(number1), Number(number2), printResult)
+add(Number(number1), Number(number2), printResult, resultPhrase)
 
 
