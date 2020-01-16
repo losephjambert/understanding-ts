@@ -7,15 +7,16 @@
 // 12 console.log(add(number1, number2))
 // Found 1 error.
 function add(num1, num2, showResult, phrase) {
+    var result = num1 + num2;
     if (showResult) {
-        console.log(phrase + " " + (num1 + num2));
+        console.log(phrase + result);
     }
     else {
-        return num1 + num2;
+        return result;
     }
 }
 var number1 = "5";
 var number2 = 3.5;
 var printResult = true;
-var resultPhrase = "Result is";
+var resultPhrase = "Result is ";
 add(Number(number1), Number(number2), printResult, resultPhrase);
