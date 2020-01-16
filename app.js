@@ -6,9 +6,15 @@
 // error TS2345: Argument of type '"5"' is not assignable to parameter of type 'number'.\
 // 12 console.log(add(number1, number2))
 // Found 1 error.
-function add(num1, num2) {
-    return num1 + num2;
+function add(num1, num2, showResult) {
+    if (showResult) {
+        console.log(num1 + num2);
+    }
+    else {
+        return num1 + num2;
+    }
 }
 var number1 = "5";
 var number2 = 3.5;
-console.log(add(Number(number1), Number(number2)));
+var printResult = true;
+add(Number(number1), Number(number2), printResult);
