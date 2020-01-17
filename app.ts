@@ -25,6 +25,11 @@ const roleTuple: [number, string] = [2, 'Engineer']
 // of 2.
 const inferredRoleTuple = [2, 'Engineer']
 
+// BE CAREFUL!
+// if you push into a tuple, you will modify the tuple's length
+// TS does not offer support against pushing into a tuple
+roleTuple.push(37) // is valid && won't throw an error
+
 const person: {
   name: string
   age: number
