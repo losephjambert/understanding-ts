@@ -33,11 +33,13 @@ roleTuple.push(37) // is valid && won't throw an error
 const person: {
   name: string
   age: number
-  hobbies: string[]
+  hobbies: string[],
+  role: [number, string]
 } = {
   name: 'Joe',
   age: 32,
-  hobbies: ['swimming', 'playing games']
+  hobbies: ['swimming', 'playing games'],
+  role: [4, 'Engineer']
 }
 
 
